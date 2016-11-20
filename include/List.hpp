@@ -1,5 +1,5 @@
-#ifndef LIST_HPP
-#define LIST_HPP
+#ifndef __LIST_HPP__
+#define __LIST_HPP__
 
 #include "list_declaration.hpp"
 
@@ -11,8 +11,10 @@ List<ListDataType>::List()
 }
 
 template <typename ListDataType>
-List<ListDataType>::List(const List<ListDataType>& rhs): List()
+List<ListDataType>::List(const List<ListDataType>& rhs)
 {
+	listSize = 0;
+    currentNode = 0;
     if(rhs.listSize == 0)
         return;
     Node * rTemp = rhs.currentNode;

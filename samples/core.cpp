@@ -12,8 +12,8 @@ int main()
 	for(int i = 0; i < mylist.getSize(); i++)
 		std::cout << mylist[i] << " -> ";
 	removeDuplicates(mylist);
-    	mylist.del(7);
-	mylist.del(3);	
+    	mylist.removeElem(7);
+	mylist.removeElem(3);	
 	std::cout << std::endl << std::endl;
     for(int i = 0; i < mylist.getSize(); i++)
 		std::cout << mylist[i] << " -> ";
